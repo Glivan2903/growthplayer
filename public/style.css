@@ -810,8 +810,8 @@ img {
 }
 
 .device-steps li {
-    display: flex;
-    gap: 16px;
+    position: relative;
+    padding-left: 44px;
     font-size: 15px;
     color: var(--text-muted);
 }
@@ -821,7 +821,9 @@ img {
 }
 
 .device-steps span {
-    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: -2px;
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -1727,13 +1729,14 @@ img {
     
     .device-steps li {
         font-size: 14px;
-        gap: 12px;
+        padding-left: 36px;
     }
     
     .device-steps span {
         width: 24px;
         height: 24px;
         font-size: 12px;
+        top: -1px;
     }
     
     .trial-container {
