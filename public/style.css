@@ -264,15 +264,26 @@ img {
     transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-img {
-    height: 48px;
-    width: auto;
-    object-fit: contain;
-    transition: var(--transition-smooth);
+.logo-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
 }
 
-.logo-img:hover {
-    transform: scale(1.05);
+.logo-text {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--text-main);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: var(--transition-smooth);
+    user-select: none;
+}
+
+.logo-text:hover {
+    transform: scale(1.03);
 }
 
 .nav {
@@ -1133,8 +1144,7 @@ img {
     padding-bottom: 60px;
 }
 
-.footer-logo {
-    height: 48px;
+.footer-logo-text {
     margin-bottom: 20px;
 }
 
